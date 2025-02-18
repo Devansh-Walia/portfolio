@@ -50,7 +50,7 @@ export default function Home() {
             <section aria-label="Statistics" className="hidden">
               <span itemProp="jobTitle">Software Engineer</span>
               <span itemProp="worksFor">Glue Labs</span>
-              <meta itemProp="email" content="yash.sh0031@gmail.com" />
+              <meta itemProp="email" content="devansh.walia.06@gmail.com" />
             </section>
 
             <section aria-label="Statistics">
@@ -97,7 +97,7 @@ export default function Home() {
               itemScope
               itemType="http://schema.org/DigitalDocument"
             >
-              <meta itemProp="name" content="Yash Sharma's Resume" />
+              <meta itemProp="name" content="Devansh's Resume" />
               <Resume />
             </section>
 
@@ -211,7 +211,9 @@ export default function Home() {
         </div>
 
         <footer className="mt-16 mb-20 md:mb-0 text-center text-gray-500">
-          <p>© {new Date().getFullYear()} Yash Sharma. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Devansh Walia. All rights reserved.
+          </p>
         </footer>
       </div>
     </div>

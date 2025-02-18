@@ -68,7 +68,7 @@ export default function GitHubContributions() {
   useEffect(() => {
     const fetchContributions = async () => {
       try {
-        const username = "yashsharma31";
+        const username = "devansh-walia";
         const response = await fetch(
           `https://github-contributions-api.jogruber.de/v4/${username}`
         );

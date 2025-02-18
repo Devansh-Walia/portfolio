@@ -56,13 +56,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Yash Sharma",
-              url: "https://yashsharma.com",
+              name: "Devansh Walia",
+              url: "https://devanshwalia.com",
               image: "/images/profile.jpeg",
               sameAs: [
-                "https://github.com/yash-sh",
-                "https://linkedin.com/in/yash-sh",
-                "https://twitter.com/yash_sh0031",
+                "https://github.com/devasnh-walia",
+                "https://linkedin.com/in/devansh-walia",
+                "https://x.com/devansh_walia_",
               ],
               jobTitle: "Software Engineer",
               worksFor: {
@@ -77,7 +77,10 @@ export default function RootLayout({
                 "Next.js",
                 "TypeScript",
                 "WebGL",
-                "Pixi.js",
+                "Svelte",
+                "NestJS",
+                "SQL",
+                "PostgreSQL",
               ],
             }),
           }}

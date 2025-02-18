@@ -1,18 +1,18 @@
 import { Metadata } from "next";
 
-const SITE_URL = "https://sharmayash.com";
+const SITE_URL = "https://devanshwalia.com";
 const PROFILE_DESCRIPTION =
   "Software engineer specializing in React, Next.js, and modern web technologies. Experienced in building exceptional digital experiences with expertise in WebGL, TypeScript, and UI/UX design.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Yash Sharma | Software Engineer",
-    template: "%s | Yash Sharma - Software Engineer",
+    default: "Devansh Walia | Software Engineer",
+    template: "%s | Devansh Walia - Software Engineer",
   },
   description: PROFILE_DESCRIPTION,
   keywords: [
-    "Yash Sharma",
+    "Devansh Walia",
     "Software Engineer",
     "Web Developer",
     "React Developer",
@@ -22,16 +22,15 @@ export const metadata: Metadata = {
     "JavaScript",
     "TypeScript",
     "WebGL",
-    "Pixi.js",
     "UI/UX Design",
     "Web Development",
     "Software Development",
     "India",
     "Remote Developer",
   ],
-  authors: [{ name: "Yash Sharma", url: SITE_URL }],
-  creator: "Yash Sharma",
-  publisher: "Yash Sharma",
+  authors: [{ name: "Devansh Walia", url: SITE_URL }],
+  creator: "Devansh Walia",
+  publisher: "Devansh Walia",
   robots: {
     index: true,
     follow: true,
@@ -49,21 +48,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Yash Sharma - Software Engineer Portfolio",
-    title: "Yash Sharma | Software Engineer & Web Developer",
+    siteName: "Devansh Walia - Software Engineer Portfolio",
+    title: "Devansh Walia | Software Engineer & Web Developer",
     description: PROFILE_DESCRIPTION,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Yash Sharma - Software Engineer Portfolio",
+        alt: "Devansh Walia - Software Engineer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yash Sharma | Software Engineer",
+    title: "Devansh Walia | Software Engineer",
     description: PROFILE_DESCRIPTION,
     creator: "@yash_sh0031",
     images: ["/og-image.png"],
