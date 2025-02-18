@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Devansh Walia | Software Engineer",
     description: PROFILE_DESCRIPTION,
-    creator: "@yash_sh0031",
+    creator: "@devansh_walia_",
     images: ["/og-image.png"],
-    site: "@yash_sh0031",
+    site: "@devansh_walia_",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
