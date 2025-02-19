@@ -26,15 +26,6 @@ export default function ContactForm() {
     const initEmailJS = async () => {
       try {
         const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-
-        // Debug logging
-        console.log("Environment Variables Status:", {
-          hasPublicKey: !!publicKey,
-          hasServiceId: !!serviceId,
-          hasTemplateId: !!templateId,
-        });
 
         if (!publicKey) {
           console.error("EmailJS public key is missing");
