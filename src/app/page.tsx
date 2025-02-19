@@ -1,17 +1,16 @@
 "use client";
 
-import Profile from "@/components/Profile";
-import Stats from "@/components/Stats";
-import RecentProjects from "@/components/RecentProjects";
-import Experience from "@/components/Experience";
 import DesignThoughts from "@/components/DesignThoughts";
-import PremiumTools from "@/components/PremiumTools";
-import Certifications from "@/components/Certifications";
-import Resume from "@/components/Resume";
+import Experience from "@/components/Experience";
 import GitHubContributions from "@/components/GitHubContributions";
 import ParticleBackground from "@/components/ParticleBackground";
-import { useEffect, useState } from "react";
+import PremiumTools from "@/components/PremiumTools";
+import Profile from "@/components/Profile";
+import RecentProjects from "@/components/RecentProjects";
+import Resume from "@/components/Resume";
+import Stats from "@/components/Stats";
 import { CONTACT_LINKS } from "@/utils/constants";
+import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -196,16 +195,6 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </section>
-
-            <section
-              id="certifications"
-              aria-label="Certifications"
-              itemScope
-              itemType="http://schema.org/ItemList"
-            >
-              <meta itemProp="name" content="Professional Certifications" />
-              <Certifications />
             </section>
           </main>
         </div>
