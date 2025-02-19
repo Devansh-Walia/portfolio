@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import Navbar from "@components/navbar";
 import { metadata } from "./metadata";
 import { Analytics } from "@vercel/analytics/react";
+import { CONTACT_LINKS } from "@/utils/constants";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,12 +58,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Devansh Walia",
-              url: "https://devanshwalia.com",
+              url: CONTACT_LINKS.me,
               image: "/images/profile.jpeg",
               sameAs: [
-                "https://github.com/devasnh-walia",
-                "https://linkedin.com/in/devansh-walia",
-                "https://x.com/devansh_walia_",
+                CONTACT_LINKS.github,
+                CONTACT_LINKS.linkedin,
+                CONTACT_LINKS.twitter,
               ],
               jobTitle: "Software Engineer",
               worksFor: {

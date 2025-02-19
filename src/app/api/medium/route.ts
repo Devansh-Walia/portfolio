@@ -1,3 +1,4 @@
+import { EXTERNAL_LINKS } from "@/utils/constants";
 import { NextResponse } from "next/server";
 import Parser from "rss-parser";
 
@@ -10,12 +11,11 @@ interface MediumRSSItem {
   "content:encoded"?: string;
 }
 
-const MEDIUM_RSS_URL = "https://medium.com/feed/@devanshwalia9898";
 const parser = new Parser<{ items: MediumRSSItem[] }>();
 
 export async function GET() {
   try {
-    const feed = await parser.parseURL(MEDIUM_RSS_URL);
+    const feed = await parser.parseURL(EXTERNAL_LINKS.mediumRssUrl);
     const posts = feed.items.map((item) => ({
       title: item.title,
       link: item.link,

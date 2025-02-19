@@ -1,7 +1,8 @@
+import { CONTACT_LINKS } from "@/utils/constants";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://devanshwalia.com";
+  const baseUrl = CONTACT_LINKS.me;
 
   return [
     {

@@ -142,7 +142,7 @@ const RecentProjects = () => {
                   </div>
                 </div>
                 <motion.a
-                  href={`https://${project.url}`}
+                  href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="md:flex hidden hover:bg-white/5 p-2 rounded-full text-gray-400 hover:text-white transition-colors shrink-0"
@@ -152,7 +152,7 @@ const RecentProjects = () => {
                   <FiExternalLink className="w-5 md:w-6 h-5 md:h-6" />
                 </motion.a>
                 <a
-                  href={`https://${project.url}`}
+                  href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex md:hidden p-2 rounded-full text-gray-400 shrink-0"

@@ -1,6 +1,7 @@
+import { CONTACT_LINKS } from "@/utils/constants";
 import { Metadata } from "next";
 
-const SITE_URL = "https://devanshwalia.com";
+const SITE_URL = CONTACT_LINKS.me;
 const PROFILE_DESCRIPTION =
   "Software engineer specializing in React, Next.js, and modern web technologies. Experienced in building exceptional digital experiences with expertise in WebGL, TypeScript, and UI/UX design.";
 

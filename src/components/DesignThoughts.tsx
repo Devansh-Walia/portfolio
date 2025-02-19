@@ -5,8 +5,7 @@ import { FiArrowRight, FiClock, FiTag } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { getMediumPosts, type MediumPost } from "@/utils/medium";
 import Image from "next/image";
-
-const MEDIUM_PROFILE = "https://medium.com/@devanshwalia9898";
+import { EXTERNAL_LINKS } from "@/utils/constants";
 
 export default function DesignThoughts() {
   const [posts, setPosts] = useState<MediumPost[]>([]);
@@ -54,7 +53,7 @@ export default function DesignThoughts() {
         </motion.h2>
 
         <a
-          href={MEDIUM_PROFILE}
+          href={EXTERNAL_LINKS.mediumProfile}
           target="_blank"
           rel="noopener noreferrer"
           className="md:flex items-center gap-2 hidden pb-4 text-blue-400 hover:text-blue-300 transition-colors group"
@@ -156,7 +155,7 @@ export default function DesignThoughts() {
       </motion.div>
 
       <a
-        href={MEDIUM_PROFILE}
+        href={EXTERNAL_LINKS.mediumProfile}
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center items-center gap-2 md:hidden mt-4 text-blue-400"

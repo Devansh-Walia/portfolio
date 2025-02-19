@@ -5,6 +5,17 @@ export const CONTACT_LINKS = {
   twitter: "https://x.com/devansh_walia_",
   linkedin: "https://www.linkedin.com/in/devansh-walia/",
   github: "https://github.com/devansh-walia",
+  me: "https://devanshwalia.com",
+};
+export const EXTERNAL_LINKS = {
+  dashgen: "https://dashgen.in",
+  calendraw: "https://calendar.devanshwalia.com/",
+  xg: "https://x.glue/is",
+  glue: "https://glue.is",
+  fifo: "https://fifo.im",
+  gluelabs: "https://gluelabs.com",
+  mediumProfile: "https://medium.com/@devanshwalia9898",
+  mediumRssUrl: "https://medium.com/feed/@devanshwalia9898",
 };
 
 export const FEATURED_PROJECTS = [
@@ -36,7 +47,7 @@ export const PROJECTS = [
     description:
       "An online tool integrating leading AI models, contributed by building a full-stack chat thread and message editing functionality using tree and LinkedList concepts.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    url: "dashgen.in",
+    url: EXTERNAL_LINKS.dashgen,
     gradient: "from-orange-500/10 to-yellow-500/10",
   },
   {
@@ -46,7 +57,7 @@ export const PROJECTS = [
     description:
       "Engineered an online calendar tool featuring traditional writing and scribbling capabilities.",
     technologies: ["TypeScript", "Tailwind CSS", "SVG"],
-    url: "calendraw.vercel.app/calender",
+    url: EXTERNAL_LINKS.calendraw,
     gradient: "from-yellow-500/10 to-green-500/10",
   },
   {
@@ -63,7 +74,7 @@ export const PROJECTS = [
       "React-Email",
       "GraphQL",
     ],
-    url: "x.glue.is",
+    url: EXTERNAL_LINKS.xg,
     gradient: "from-blue-500/10 to-purple-500/10",
   },
   {
@@ -73,7 +84,7 @@ export const PROJECTS = [
     description:
       "Built an app to create fan pages with AI-generated videos and rewards to engage customers, aiming to 3x organic traffic on the customer's profile.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React-Email"],
-    url: "glue.is",
+    url: EXTERNAL_LINKS.glue,
     gradient: "from-purple-500/10 to-pink-500/10",
   },
   {
@@ -83,7 +94,7 @@ export const PROJECTS = [
     description:
       "Created the GlueLabs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SVG"],
-    url: "gluelabs.com",
+    url: EXTERNAL_LINKS.gluelabs,
     gradient: "from-pink-500/10 to-orange-500/10",
   },
 ];

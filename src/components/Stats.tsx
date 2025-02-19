@@ -5,7 +5,7 @@ import { MdOutlineChat } from "react-icons/md";
 
 import circle from "../assets/svg/circle1.svg";
 import waves from "../assets/svg/waves1.svg";
-import { STATS } from "@/utils/constants";
+import { EXTERNAL_LINKS, STATS } from "@/utils/constants";
 
 interface StatItemProps {
   number: string;
@@ -72,14 +72,14 @@ const Stats = () => {
       src: waves,
       icon: <MdOutlineChat className="w-8 md:w-10 h-8 md:h-10" color="black" />,
       title: "AI CHAT WITH MULTIPLE LANGUAGES",
-      link: "https://dashgen.in",
+      link: EXTERNAL_LINKS.dashgen,
       isDark: false,
     },
     {
       src: circle,
       icon: <FiLayers className="w-8 md:w-10 h-8 md:h-10" color="white" />,
       title: "Draw your thoughts away on a calender",
-      link: "https://calendar.devanshwalia.com/",
+      link: EXTERNAL_LINKS.calendraw,
       isDark: true,
     },
   ];
