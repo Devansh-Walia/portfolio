@@ -8,8 +8,14 @@ import { BiSolidLayer } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { GiRamProfile } from "react-icons/gi";
 
 const navItems = [
+  {
+    text: "Profile",
+    icon: <GiRamProfile className="text-lg" />,
+    href: "#profile",
+  },
   {
     text: "Projects",
     icon: <GoProjectSymlink className="text-lg" />,
