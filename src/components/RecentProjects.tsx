@@ -17,6 +17,7 @@ import {
   SiJavascript,
 } from "react-icons/si";
 import { BsEnvelopePaper } from "react-icons/bs";
+import { PROJECTS } from "@/utils/constants";
 
 const RecentProjects = () => {
   const getTechIcon = (tech: string) => {
@@ -37,44 +38,6 @@ const RecentProjects = () => {
     const isPresent = end.toLowerCase() === "present";
     return { start, end, isPresent };
   };
-
-  const projects = [
-    {
-      title: "Glue",
-      role: "Software Development Engineer",
-      duration: "03/2022 - Present",
-      description:
-        "Orchestrated a canvas using Pixi.js and React-pixi with WebGL rendering for high-performance 2D graphics processing, achieving 30% more efficiency. Traced performance bottlenecks resulting in a 150ms reduction in load time.",
-      technologies: [
-        "Pixi.js",
-        "React Pixi",
-        "Next.js",
-        "Zustand",
-        "TypeScript",
-      ],
-      url: "glue.is",
-      gradient: "from-blue-500/10 to-purple-500/10",
-    },
-    {
-      title: "Dashgen",
-      role: "Software Development Engineer and UI/UX Designer",
-      duration: "06/2024 - Present",
-      description:
-        "Developed a multi-platform AI integration tool with 5 different AI models, achieving 20% improvement in user experience through interface design.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      url: "dashgen.in",
-      gradient: "from-purple-500/10 to-pink-500/10",
-    },
-    {
-      title: "xG",
-      role: "Software Development Engineer",
-      duration: "05/2023 - 12/2024",
-      description:
-        "Engineered a high-performance video creator app using Pixi.js and React Pixi.js, resulting in 20% faster rendering. Designed an advanced email edit tool increasing customization by 40%. Built an image positioning system with 10x customization accuracy.",
-      technologies: ["Next.js", "React-Email", "SVG", "Tailwind CSS"],
-      gradient: "from-pink-500/10 to-orange-500/10",
-    },
-  ];
 
   const containerVariants: Variants = {
     initial: {},
@@ -142,7 +105,7 @@ const RecentProjects = () => {
           },
         }}
       >
-        {projects.map((project) => (
+        {PROJECTS.map((project) => (
           <motion.div
             key={project.title}
             className={`p-5 md:p-8 rounded-3xl bg-gradient-to-br ${project.gradient} backdrop-blur-3xl border border-white/10 md:hover:border-white/20 transition-all group relative overflow-hidden md:[&:hover]:scale-105`}

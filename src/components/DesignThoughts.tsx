@@ -113,7 +113,8 @@ export default function DesignThoughts() {
                       src={post.thumbnail}
                       alt={post.title}
                       fill
-                      className="md:group-hover:scale-105 transition-transform duration-300 object-cover"
+                      className="md:group-hover:scale-105 transition-transform duration-300"
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
                 ) : (

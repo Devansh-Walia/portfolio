@@ -84,7 +84,7 @@ function MobileProfile() {
             fill
             sizes="(max-width: 768px) 280px, 280px"
             priority
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
           />
         </motion.div>
 

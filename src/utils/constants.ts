@@ -7,90 +7,113 @@ export const CONTACT_LINKS = {
   github: "https://github.com/devansh-walia",
 };
 
-export const HERO_SECTION = {
-  title: "FRONTEND",
-  titleColored: "DEVELOPER",
-  description:
-    "Passionate about crafting exceptional web experiences with React and Next.js. Specializing in building high-performance applications with modern web technologies.",
-  stats: [
-    { number: "50+", text: "GITHUB REPOSITORIES" },
-    { number: "10K+", text: "LINES OF CODE" },
-    { number: "15+", text: "SUCCESSFUL PROJECTS" },
-  ],
-};
-
 export const FEATURED_PROJECTS = [
   {
-    title: "CURSOR.SO",
-    description: "AI-Powered Code Editor",
+    title: "XG PLATFORM",
+    description: "Workflow Automation System",
     icon: FiCode,
     isDark: true,
   },
   {
-    title: "CHATGPT CLONE",
-    description: "Voice-Enabled AI Chat",
+    title: "GLUE",
+    description: "AI-Powered Fan Pages",
     icon: MdOutlineChat,
     isDark: true,
   },
   {
-    title: "PORTFOLIO 2024",
-    description: "Next.js & Framer Motion",
+    title: "DASHGEN",
+    description: "AI Integration Platform",
     icon: FiLayers,
     isDark: true,
   },
 ];
 
-export const RECENT_PROJECTS = [
+export const PROJECTS = [
   {
-    title: "Cursor.so - AI Code Editor",
+    title: "Dashgen",
+    role: "Software Development Engineer",
+    duration: "01/2024 - Present",
     description:
-      "Built with Electron and React, featuring real-time collaboration, AI code completion, and advanced development tools.",
-    image: "/images/cursor.png",
+      "An online tool integrating leading AI models, contributed by building a full-stack chat thread and message editing functionality using tree and LinkedList concepts.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    url: "dashgen.in",
+    gradient: "from-orange-500/10 to-yellow-500/10",
+  },
+  {
+    title: "Calendraw",
+    role: "Solo Developer",
+    duration: "12/2023 - Present",
+    description:
+      "Engineered an online calendar tool featuring traditional writing and scribbling capabilities.",
+    technologies: ["TypeScript", "Tailwind CSS", "SVG"],
+    url: "calendraw.vercel.app/calender",
+    gradient: "from-yellow-500/10 to-green-500/10",
+  },
+  {
+    title: "XG",
+    role: "Team Lead",
+    duration: "06/2022 - Present",
+    description:
+      "Developed a flexible workflow system similar to Zapier using queues and LinkedList techniques. Constructed backend for a Customer Relationship Management (CRM) system and a mail editor.",
+    technologies: [
+      "Next.js",
+      "Zustand",
+      "TypeScript",
+      "Tailwind CSS",
+      "React-Email",
+      "GraphQL",
+    ],
+    url: "x.glue.is",
     gradient: "from-blue-500/10 to-purple-500/10",
-    link: "https://cursor.so",
   },
   {
-    title: "ChatGPT Clone with Voice",
+    title: "Glue",
+    role: "Software Development Engineer",
+    duration: "06/2022 - Present",
     description:
-      "Full-stack application with voice recognition, real-time responses, and conversation history using OpenAI's API.",
-    image: "/images/chatgpt.png",
+      "Built an app to create fan pages with AI-generated videos and rewards to engage customers, aiming to 3x organic traffic on the customer's profile.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React-Email"],
+    url: "glue.is",
     gradient: "from-purple-500/10 to-pink-500/10",
-    link: "https://chat.example.com",
   },
   {
-    title: "Modern Portfolio 2024",
+    title: "Glue Labs",
+    role: "Software Development Engineer",
+    duration: "06/2022 - Present",
     description:
-      "Responsive portfolio built with Next.js 14, Server Components, and Framer Motion for smooth animations.",
-    image: "/images/portfolio.png",
+      "Created the GlueLabs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SVG"],
+    url: "gluelabs.com",
     gradient: "from-pink-500/10 to-orange-500/10",
-    link: "https://portfolio.example.com",
   },
 ];
 
-export const EXPERIENCE = [
+export const EXPERIENCES = [
   {
-    company: "Software Engineer at Cursor.so",
-    period: "2023 - Present",
-    description:
-      "Leading frontend development of an AI-powered code editor. Implemented key features using Electron, React, and TypeScript. Integrated OpenAI's API for code completion and chat functionality.",
-    technologies: ["React", "Electron", "TypeScript", "OpenAI API"],
+    company: "Glue Labs",
+    role: "Software Developer",
+    period: "06/2022 - Present",
+    responsibilities: [
+      "Spearheaded the development of the xG platform, implementing features like multi-template email templates with React Email, DAM, and integrations with Shopify and Instagram.",
+      "Established the code architecture for the Glue project from scratch, following best practices to ensure scalability and performance.",
+      "Worked with a diverse team of 12+, consistently meeting feature deadlines and enhancing collaborative efficiency.",
+      "Engineered an admin dashboard for 3+ products with Next.js and Nest.js, streamlining product management.",
+      "Implemented a high-performance company-wide file upload service utilizing AWS S3 and CloudFront, resulting in a 35% reduction in asset load times.",
+      "Conducted code reviews to enhance code quality, security, and compliance with industry standards.",
+    ],
   },
   {
-    company: "Frontend Developer at Tech Corp",
-    period: "2022 - 2023",
-    description:
-      "Developed and maintained multiple React applications. Improved application performance by 40% through code optimization and modern web practices.",
-    technologies: ["React", "Next.js", "TailwindCSS", "TypeScript"],
-  },
-  {
-    company: "Web Developer at StartUp Inc",
-    period: "2021 - 2022",
-    description:
-      "Built responsive web applications and implemented modern UI/UX designs. Collaborated with designers and backend teams for seamless integration.",
-    technologies: ["JavaScript", "React", "CSS3", "REST APIs"],
+    company: "Novasie",
+    role: "Software Development Intern",
+    period: "04/2021 - 06/2022",
+    responsibilities: [
+      "Revamped user interfaces with React and TailwindCSS, significantly improving application usability.",
+      "Authored efficient backend services and RESTful APIs using ExpressJs, ensuring seamless functionality for 2+ services.",
+      "Refactored codebases utilizing TypeScript and ESLint to enhance code quality, security, and maintainability.",
+      "Integrated Firebase Authentication into a food ordering app, bolstering security and streamlining user management.",
+    ],
   },
 ];
-
 export const PREMIUM_TOOLS = [
   {
     name: "React",
@@ -113,34 +136,19 @@ export const PREMIUM_TOOLS = [
     icon: "/images/tools/tailwind.png",
   },
   {
-    name: "Electron",
-    description: "Desktop Apps",
-    icon: "/images/tools/electron.png",
+    name: "Node.js",
+    description: "Backend Runtime",
+    icon: "/images/tools/nodejs.png",
   },
   {
-    name: "Framer Motion",
-    description: "Animations",
-    icon: "/images/tools/framer.png",
+    name: "AWS",
+    description: "Cloud Services",
+    icon: "/images/tools/aws.png",
   },
 ];
 
-export const BLOG_POSTS = [
-  {
-    title: "Building an AI-Powered Code Editor",
-    description:
-      "A deep dive into creating Cursor.so, an AI-powered code editor using Electron and React. Learn about the challenges and solutions in building a modern development tool.",
-    date: "Jan 15, 2024",
-  },
-  {
-    title: "Optimizing React Applications",
-    description:
-      "Practical techniques for improving React application performance. From code splitting to memoization, learn how to make your apps faster.",
-    date: "Dec 20, 2023",
-  },
-  {
-    title: "Modern Frontend Architecture",
-    description:
-      "Exploring the latest trends in frontend architecture. Learn about micro-frontends, state management, and modular design patterns.",
-    date: "Nov 30, 2023",
-  },
+export const STATS = [
+  { number: "~3", text: "YEARS OF EXPERIENCE" },
+  { number: "+18", text: "PROJECTS COMPLETED" },
+  { number: "+28", text: "WORKED LIBRARIES" },
 ];

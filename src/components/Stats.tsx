@@ -5,6 +5,7 @@ import { MdOutlineChat } from "react-icons/md";
 
 import cicle from "../assets/svg/circle1.svg";
 import waves from "../assets/svg/waves1.svg";
+import { STATS } from "@/utils/constants";
 
 interface StatItemProps {
   number: string;
@@ -66,26 +67,20 @@ const StatItem = ({ number, text, delay }: StatItemProps) => (
 );
 
 const Stats = () => {
-  const stats = [
-    { number: "~3", text: "YEARS OF EXPERIENCE" },
-    { number: "+18", text: "PROJECTS COMPLETED" },
-    { number: "+28", text: "WORKED LIBRARIES" },
-  ];
-
   const projects = [
-    {
-      src: cicle,
-      icon: <FiLayers className="w-8 md:w-10 h-8 md:h-10" color="white" />,
-      title: "VIDEO EDITOR WITH PIXI.JS",
-      link: "https://glue.is",
-      isDark: true,
-    },
     {
       src: waves,
       icon: <MdOutlineChat className="w-8 md:w-10 h-8 md:h-10" color="black" />,
       title: "AI CHAT WITH MULTIPLE LANGUAGES",
       link: "https://dashgen.in",
       isDark: false,
+    },
+    {
+      src: cicle,
+      icon: <FiLayers className="w-8 md:w-10 h-8 md:h-10" color="white" />,
+      title: "Draw your thoughts away on a calender",
+      link: "https://calendar.devanshwalia.com/",
+      isDark: true,
     },
   ];
 
@@ -114,7 +109,7 @@ const Stats = () => {
         initial="initial"
         animate="animate"
       >
-        {stats.map((stat, i) => (
+        {STATS.map((stat, i) => (
           <StatItem
             key={stat.text}
             number={stat.number}
@@ -144,7 +139,7 @@ const Stats = () => {
               alt={project.title}
               className="border-2 opacity-80 border-black rounded-2xl"
               fill
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
             />
             <motion.div
               className="top-8 left-8 absolute"
