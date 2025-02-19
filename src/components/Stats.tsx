@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FiArrowRight, FiLayers } from "react-icons/fi";
 import { MdOutlineChat } from "react-icons/md";
 
-import cicle from "../assets/svg/circle1.svg";
+import circle from "../assets/svg/circle1.svg";
 import waves from "../assets/svg/waves1.svg";
 import { STATS } from "@/utils/constants";
 
@@ -76,7 +76,7 @@ const Stats = () => {
       isDark: false,
     },
     {
-      src: cicle,
+      src: circle,
       icon: <FiLayers className="w-8 md:w-10 h-8 md:h-10" color="white" />,
       title: "Draw your thoughts away on a calender",
       link: "https://calendar.devanshwalia.com/",
