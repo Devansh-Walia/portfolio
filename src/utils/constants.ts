@@ -1,4 +1,6 @@
 import { FiLayers, FiCode } from "react-icons/fi";
+import { FaChess, FaCode } from "react-icons/fa";
+import { GiCricketBat, GiBoxingGlove, GiKimono } from "react-icons/gi";
 import { MdOutlineChat } from "react-icons/md";
 
 export const CONTACT_LINKS = {
@@ -185,5 +187,45 @@ export const VOLUNTEER_EXPERIENCES = [
       "Trained team members on content management systems and web development best practices",
     ],
     logoSrc: "/images/organizations/koshish-family.png",
+  },
+];
+
+export const HOBBIES = [
+  {
+    title: "Chess",
+    icon: FaChess,
+    description:
+      "Strategic player with a passion for the game. Check out my Chess.com profile to see my games and rating.",
+    link: "https://www.chess.com/member/exactlantern",
+    gradient: "from-blue-500/10 to-cyan-500/10",
+  },
+  {
+    title: "Karate",
+    icon: GiKimono,
+    description:
+      "Enthusiast of this martial art that combines discipline, technique, and mental focus.",
+    gradient: "from-red-500/10 to-orange-500/10",
+  },
+  {
+    title: "MMA",
+    icon: GiBoxingGlove,
+    description:
+      "Avid follower of mixed martial arts competitions and training techniques.",
+    gradient: "from-purple-500/10 to-pink-500/10",
+  },
+  {
+    title: "Cricket",
+    icon: GiCricketBat,
+    description:
+      "Fan of cricket with a deep appreciation for the strategy and skill involved in the sport.",
+    gradient: "from-green-500/10 to-emerald-500/10",
+  },
+  {
+    title: "LeetCode",
+    icon: FaCode,
+    description:
+      "Regularly solve coding problems to sharpen algorithmic thinking and problem-solving skills.",
+    link: "https://leetcode.com/u/dunit99k/",
+    gradient: "from-yellow-500/10 to-amber-500/10",
   },
 ];

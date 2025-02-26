@@ -3,12 +3,14 @@
 import DesignThoughts from "@/components/DesignThoughts";
 import Experience from "@/components/Experience";
 import GitHubContributions from "@/components/GitHubContributions";
+import Hobbies from "@/components/Hobbies";
 import ParticleBackground from "@/components/ParticleBackground";
 import PremiumTools from "@/components/PremiumTools";
 import Profile from "@/components/Profile";
 import RecentProjects from "@/components/RecentProjects";
 import Resume from "@/components/Resume";
 import Stats from "@/components/Stats";
+import VolunteerWork from "@/components/VolunteerWork";
 import { CONTACT_LINKS } from "@/utils/constants";
 import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -81,6 +83,16 @@ export default function Home() {
             </section>
 
             <section
+              id="volunteer"
+              aria-label="Volunteer Work"
+              itemScope
+              itemType="http://schema.org/WorkExperience"
+            >
+              <meta itemProp="name" content="Volunteer Experience" />
+              <VolunteerWork />
+            </section>
+
+            <section
               id="tech-stack"
               aria-label="Technical Skills"
               itemScope
@@ -98,6 +110,16 @@ export default function Home() {
             >
               <meta itemProp="name" content="Devansh's Resume" />
               <Resume />
+            </section>
+
+            <section
+              id="interests"
+              aria-label="Interests and Hobbies"
+              itemScope
+              itemType="http://schema.org/ItemList"
+            >
+              <meta itemProp="name" content="Personal Interests" />
+              <Hobbies />
             </section>
 
             <section
