@@ -124,16 +124,22 @@ function MobileNav() {
       const currentSection = sections.find((section) => {
         if (!section.element) return false;
         const rect = section.element.getBoundingClientRect();
+
         return rect.top <= 100 && rect.bottom >= 100;
       });
 
       if (currentSection) {
         setActiveSection(currentSection.id);
+      } else if (window.scrollY < 100) {
+        setActiveSection("profile");
       }
 
       // Show/hide scroll to top button
       setShowScrollTop(window.scrollY > 200);
     };
+
+    // Call once on mount to set initial active section
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -237,19 +243,39 @@ export default function Navbar() {
         element: document.getElementById(item.href.slice(1)),
       }));
 
+      const isLargeScreen = window.innerWidth > 1024;
+
       const currentSection = sections.find((section) => {
         if (!section.element) return false;
+
+        if (isLargeScreen && section.id === "profile") return false;
+
         const rect = section.element.getBoundingClientRect();
         return rect.top <= 100 && rect.bottom >= 100;
       });
+
+      console.log(currentSection);
 
       if (currentSection) {
         setActiveSection(currentSection.id);
       }
     };
 
+    // Call once on mount to set initial active section
+    handleScroll();
+
+    // Also update on window resize to handle screen size changes
+    const handleResize = () => {
+      handleScroll();
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const handleNavClick = (href: string) => {
