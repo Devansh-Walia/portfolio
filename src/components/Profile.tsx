@@ -224,7 +224,6 @@ export default function Profile() {
               alt="Devansh Walia"
               className="relative rounded-2xl"
               fill
-              objectFit="cover"
             />
           </motion.div>
 
