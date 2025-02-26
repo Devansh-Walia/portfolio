@@ -163,3 +163,27 @@ export const STATS = [
   { number: "+18", text: "PROJECTS COMPLETED" },
   { number: "+28", text: "WORKED LIBRARIES" },
 ];
+
+export const VOLUNTEER_EXPERIENCES = [
+  {
+    organization: "Koshish Family",
+    role: "Marketing Department Member",
+    period: "2023 - Present",
+    responsibilities: [
+      "Developed and executed marketing strategies to promote organization events and initiatives",
+      "Collaborated with team members to organize successful fundraising campaigns",
+    ],
+    logoSrc: "/images/organizations/koshish-family.png",
+  },
+  {
+    organization: "Koshish Family",
+    role: "HOD Website Department",
+    period: "2022 - Present",
+    responsibilities: [
+      "Led the website development team, overseeing all aspects of the organization's online presence",
+      "Managed website content updates and ensured information accuracy across all pages",
+      "Trained team members on content management systems and web development best practices",
+    ],
+    logoSrc: "/images/organizations/koshish-family.png",
+  },
+];
