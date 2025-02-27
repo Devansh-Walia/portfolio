@@ -1,7 +1,40 @@
 import { FiLayers, FiCode } from "react-icons/fi";
-import { FaChess, FaCode } from "react-icons/fa";
+import { FaChess, FaCode, FaChalkboardTeacher } from "react-icons/fa";
 import { GiCricketBat, GiBoxingGlove, GiKimono } from "react-icons/gi";
 import { MdOutlineChat } from "react-icons/md";
+import { HiAcademicCap } from "react-icons/hi";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiRedux,
+  SiGit,
+  SiAmazon,
+  SiFirebase,
+  SiSupabase,
+  SiNodedotjs,
+  SiNestjs,
+  SiExpress,
+  SiPostgresql,
+  SiApachekafka,
+  SiRedis,
+  SiSocketdotio,
+  SiSequelize,
+  SiDocker,
+  SiGraphql,
+  SiGithubactions,
+  SiMui,
+  SiStyledcomponents,
+  SiHtml5,
+  SiCss3,
+  SiSvelte,
+  SiCplusplus,
+  SiFlask,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 export const CONTACT_LINKS = {
   twitter: "https://x.com/devansh_walia_",
@@ -45,36 +78,40 @@ export const PROJECTS = [
   {
     title: "Dashgen",
     role: "Software Development Engineer",
-    duration: "01/2024 - Present",
+    duration: "01/2023 - Present",
     description:
-      "An online tool integrating leading AI models, contributed by building a full-stack chat thread and message editing functionality using tree and LinkedList concepts.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      "A platform for integrating AI models into chat functionalities. Developed with colleagues, now with 1000+ active users. Built full-stack chat thread and message editing using tree and LinkedList concepts.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "NestJS",
+      "PostgreSQL",
+      "Redis",
+      "LangChain",
+      "Docker",
+      "GitHub Actions",
+      "AWS",
+    ],
     url: EXTERNAL_LINKS.dashgen,
     gradient: "from-orange-500/10 to-yellow-500/10",
-  },
-  {
-    title: "Calendraw",
-    role: "Solo Developer",
-    duration: "12/2023 - Present",
-    description:
-      "Engineered an online calendar tool featuring traditional writing and scribbling capabilities.",
-    technologies: ["TypeScript", "Tailwind CSS", "SVG"],
-    url: EXTERNAL_LINKS.calendraw,
-    gradient: "from-yellow-500/10 to-green-500/10",
   },
   {
     title: "XG",
     role: "Team Lead",
     duration: "06/2022 - Present",
     description:
-      "Developed a flexible workflow system similar to Zapier using queues and LinkedList techniques. Constructed backend for a Customer Relationship Management (CRM) system and a mail editor.",
+      "Created a powerful workflow automation tool similar to Zapier using queues and LinkedList techniques. Constructed backend for a CRM system and a mail editor.",
     technologies: [
       "Next.js",
-      "Zustand",
+      "Nest.js",
+      "Redis",
+      "BullMQ",
+      "React Query",
+      "GraphQL",
       "TypeScript",
       "Tailwind CSS",
-      "React-Email",
-      "GraphQL",
     ],
     url: EXTERNAL_LINKS.xg,
     gradient: "from-blue-500/10 to-purple-500/10",
@@ -85,19 +122,55 @@ export const PROJECTS = [
     duration: "06/2022 - Present",
     description:
       "Built an app to create fan pages with AI-generated videos and rewards to engage customers, aiming to 3x organic traffic on the customer's profile.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React-Email"],
+    technologies: [
+      "Nest.js",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Redis",
+    ],
     url: EXTERNAL_LINKS.glue,
     gradient: "from-purple-500/10 to-pink-500/10",
   },
   {
-    title: "Glue Labs",
+    title: "Glue Labs Website",
     role: "Software Development Engineer",
     duration: "06/2022 - Present",
     description:
-      "Created the GlueLabs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SVG"],
+      "Created the Glue Labs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
+    technologies: ["Astro", "Svelte", "TypeScript", "Tailwind CSS"],
     url: EXTERNAL_LINKS.gluelabs,
     gradient: "from-pink-500/10 to-orange-500/10",
+  },
+  {
+    title: "Calendraw",
+    role: "Solo Developer",
+    duration: "01/2023 - Present",
+    description:
+      "Engineered an online calendar tool featuring traditional writing and scribbling capabilities.",
+    technologies: ["Svelte Kit", "TypeScript", "CSS"],
+    url: EXTERNAL_LINKS.calendraw,
+    gradient: "from-yellow-500/10 to-green-500/10",
+  },
+  {
+    title: "MyEduStation",
+    role: "Software Development Engineer",
+    duration: "01/2023 - Present",
+    description:
+      "Delivered a full-stack educational platform offering resources for students, teachers, and parents, featuring articles, videos, and downloadable materials. Included 3+ interlinked services.",
+    technologies: [
+      "Next.js",
+      "React Query",
+      "Tailwind CSS",
+      "Nest.js",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+      "GitHub Actions",
+    ],
+    url: "#",
+    gradient: "from-green-500/10 to-teal-500/10",
   },
 ];
 
@@ -107,12 +180,15 @@ export const EXPERIENCES = [
     role: "Software Developer",
     period: "06/2022 - Present",
     responsibilities: [
-      "Spearheaded the development of the xG platform, implementing features like multi-template email templates with React Email, DAM, and integrations with Shopify and Instagram.",
-      "Established the code architecture for the Glue project from scratch, following best practices to ensure scalability and performance.",
-      "Worked with a diverse team of 12+, consistently meeting feature deadlines and enhancing collaborative efficiency.",
-      "Engineered an admin dashboard for 3+ products with Next.js and Nest.js, streamlining product management.",
-      "Implemented a high-performance company-wide file upload service utilizing AWS S3 and CloudFront, resulting in a 35% reduction in asset load times.",
-      "Conducted code reviews to enhance code quality, security, and compliance with industry standards.",
+      "Developed the workflow structure in XG using Linked List and Queues to automate marketing email campaigns. Implemented backend systems and integrated frontend APIs and UI.",
+      "Designed a process to gather data from multiple sources, utilize AI for analysis, and feed results into React email templates for seamless communication.",
+      "Conducted research and development to optimize the creation of a static website, evaluating frameworks like Remix and Astro. Implemented a solution using Svelte with Astro for its lightweight nature and reduced boilerplate code, achieving a 98% SEO ranking.",
+      'Developed initial backend for the Glue platform using NestJS, implementing features like the affiliate program. On the frontend, created the landing page and "create page" functionality, enabling influencers to leverage AI-generated videos and gift coupons for organic traffic growth.',
+      "Integrated Glue ID, a common OAuth-compliant authentication platform, into the Glue services, ensuring secure and standardized authentication for various clients.",
+      "Established the code architecture for the Glue project from scratch, following best practices ensuring scalability and performance, which improved system reliability and developer productivity.",
+      "Engineered a common admin dashboard for all the products at Glue Labs with Next.js and Nest.js, that helped in streamlining product management across departments and boosting operational efficiency.",
+      "Implemented a high-performance company-wide file upload service utilizing AWS S3 and CloudFront.",
+      "Helped in reviewing code to enhance code quality, security, and compliance with industry standards.",
     ],
   },
   {
@@ -120,13 +196,14 @@ export const EXPERIENCES = [
     role: "Software Development Intern",
     period: "04/2021 - 06/2022",
     responsibilities: [
-      "Revamped user interfaces with React and TailwindCSS, significantly improving application usability.",
-      "Authored efficient backend services and RESTful APIs using ExpressJs, ensuring seamless functionality for 2+ services.",
-      "Refactored codebases utilizing TypeScript and ESLint to enhance code quality, security, and maintainability.",
-      "Integrated Firebase Authentication into a food ordering app, bolstering security and streamlining user management.",
+      "Revamped UI for 2+ repositories with React and TailwindCSS, significantly improving usability.",
+      "Authored efficient backend services and REST APIs using ExpressJs with testing, ensuring seamless functionality.",
+      "Refactored codebases utilizing TypeScript and ESLint by following best practices enhancing code quality, security, and maintainability.",
+      "Collaborated with the backend team to integrate Firebase Authentication into a food ordering app, enhancing security and streamlining user management through effective communication for seamless integration.",
     ],
   },
 ];
+
 export const PREMIUM_TOOLS = [
   {
     name: "React",
@@ -227,5 +304,96 @@ export const HOBBIES = [
       "Try Solving coding problems from time to time to sharpen algorithmic thinking and problem-solving skills.",
     link: "https://leetcode.com/u/dunit99k/",
     gradient: "from-yellow-500/10 to-amber-500/10",
+  },
+];
+
+export const SKILL_CATEGORIES = [
+  {
+    title: "Languages",
+    items: [
+      { name: "TypeScript", icon: SiTypescript, color: "text-blue-400" },
+      { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+      { name: "C++", icon: SiCplusplus, color: "text-blue-600" },
+      { name: "Python", icon: SiPython, color: "text-blue-500" },
+    ],
+  },
+  {
+    title: "Frontend",
+    items: [
+      { name: "React.js", icon: SiReact, color: "text-cyan-400" },
+      {
+        name: "React Native",
+        icon: TbBrandReactNative,
+        color: "text-cyan-500",
+      },
+      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-300" },
+      { name: "Redux", icon: SiRedux, color: "text-purple-500" },
+      { name: "React Query", icon: SiReact, color: "text-red-400" },
+      { name: "Zustand", icon: SiReact, color: "text-blue-400" },
+      { name: "Material UI", icon: SiMui, color: "text-blue-500" },
+      {
+        name: "Styled Components",
+        icon: SiStyledcomponents,
+        color: "text-pink-500",
+      },
+      { name: "HTML", icon: SiHtml5, color: "text-orange-500" },
+      { name: "CSS", icon: SiCss3, color: "text-blue-500" },
+      { name: "Svelte", icon: SiSvelte, color: "text-orange-600" },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+      { name: "Nest.js", icon: SiNestjs, color: "text-red-500" },
+      { name: "Express.js", icon: SiExpress, color: "text-gray-400" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-500" },
+      { name: "Kafka", icon: SiApachekafka, color: "text-black" },
+      { name: "Redis", icon: SiRedis, color: "text-red-500" },
+      { name: "Socket.IO", icon: SiSocketdotio, color: "text-white" },
+      { name: "Sequelize ORM", icon: SiSequelize, color: "text-blue-500" },
+      { name: "TypeORM", icon: SiTypescript, color: "text-orange-500" },
+      { name: "Flask", icon: SiFlask, color: "text-gray-300" },
+    ],
+  },
+  {
+    title: "Tools & DevOps",
+    items: [
+      { name: "Docker", icon: SiDocker, color: "text-blue-500" },
+      { name: "GraphQL", icon: SiGraphql, color: "text-pink-600" },
+      { name: "GitHub Actions", icon: SiGithubactions, color: "text-blue-400" },
+      { name: "AWS", icon: SiAmazon, color: "text-yellow-500" },
+      { name: "Firebase", icon: SiFirebase, color: "text-yellow-400" },
+      { name: "Supabase", icon: SiSupabase, color: "text-emerald-500" },
+      { name: "Git", icon: SiGit, color: "text-orange-500" },
+    ],
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    title: "Rethinking Asynchronous Programming by Kyle Simpson",
+    issuer: "Pluralsight",
+    issueDate: "2022",
+    icon: FaChalkboardTeacher,
+    iconColor: "text-blue-400",
+    credentialId: null,
+  },
+  {
+    title: "Advanced JavaScript by Kyle Simpson",
+    issuer: "Pluralsight",
+    issueDate: "2022",
+    icon: FaChalkboardTeacher,
+    iconColor: "text-blue-400",
+    credentialId: null,
+  },
+  {
+    title: "Python for Everybody by University of Michigan",
+    issuer: "Coursera",
+    issueDate: "2021",
+    icon: HiAcademicCap,
+    iconColor: "text-blue-500",
+    credentialId: null,
   },
 ];

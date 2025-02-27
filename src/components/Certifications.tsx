@@ -3,94 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import { SiGoogle, SiAmazon, SiCisco, SiUdemy } from "react-icons/si";
-import { FaChalkboardTeacher, FaMicrosoft } from "react-icons/fa";
-import { HiAcademicCap } from "react-icons/hi";
-import { BiBrain } from "react-icons/bi";
-import { MdDesignServices } from "react-icons/md";
-
-const certifications = [
-  {
-    title: "30 days of Google Cloud Program 2021",
-    issuer: "Google for Developers",
-    issueDate: "Nov 2021",
-    credentialId: "42c905e4-ef05-4e66-b443-cde1f4d644d0",
-    icon: <SiGoogle className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-blue-400",
-  },
-  {
-    title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
-    issuer: "Amazon Web Services (AWS)",
-    issueDate: "Nov 2021",
-    icon: <SiAmazon className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-orange-400",
-  },
-  {
-    title: "AWS Cloud Masterclass - Cloud Practitioner Essentials",
-    issuer: "nasscom",
-    issueDate: "Oct 2021",
-    credentialId: "FSP/2021/10/993881",
-    icon: <HiAcademicCap className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-purple-400",
-  },
-  {
-    title: "Graphic Designing Team Leader",
-    issuer: "Skillarena",
-    issueDate: "Jun 2021",
-    credentialId: "SAGD001",
-    icon: <MdDesignServices className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-pink-400",
-  },
-  {
-    title: "Introduction to Cybersecurity",
-    issuer: "Cisco",
-    issueDate: "Mar 2021",
-    icon: <SiCisco className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-blue-500",
-  },
-  {
-    title: "Introduction to Packet Tracer",
-    issuer: "Cisco",
-    issueDate: "Mar 2021",
-    icon: <SiCisco className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-blue-500",
-  },
-  {
-    title: "Microsoft Certified: Azure AI Fundamentals",
-    issuer: "Microsoft",
-    issueDate: "Mar 2021",
-    icon: <FaMicrosoft className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-blue-400",
-  },
-  {
-    title: "Microsoft Certified: Azure Fundamentals",
-    issuer: "Microsoft",
-    issueDate: "Mar 2021",
-    icon: <FaMicrosoft className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-blue-400",
-  },
-  {
-    title: "Deep Learning: Convolutional Neural Networks in Python",
-    issuer: "Udemy",
-    issueDate: "Oct 2020",
-    icon: <BiBrain className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-purple-500",
-  },
-  {
-    title: "Introduction to Data Science",
-    issuer: "Cognitive Class",
-    issueDate: "Oct 2020",
-    icon: <FaChalkboardTeacher className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-green-400",
-  },
-  {
-    title: "Adobe Photoshop CC – Essentials Training",
-    issuer: "Udemy",
-    issueDate: "Jun 2020",
-    icon: <SiUdemy className="w-5 md:w-6 h-5 md:h-6" />,
-    iconColor: "text-red-400",
-  },
-];
+import { CERTIFICATIONS } from "@/utils/constants";
 
 export default function Certifications() {
   return (
@@ -131,7 +44,7 @@ export default function Certifications() {
           },
         }}
       >
-        {certifications.map((cert) => (
+        {CERTIFICATIONS.map((cert) => (
           <motion.div
             key={cert.title}
             className="relative flex flex-col gap-3 border-white/5 md:hover:border-white/20 bg-black/20 backdrop-blur-sm p-3 md:p-4 border rounded-2xl transition-colors overflow-hidden active:scale-[0.99] group"
@@ -144,7 +57,9 @@ export default function Certifications() {
               <div
                 className={`flex items-center justify-center bg-white/5 rounded-lg w-8 h-8 md:w-10 md:h-10 shrink-0 ${cert.iconColor}`}
               >
-                {cert.icon}
+                {React.createElement(cert.icon, {
+                  className: "w-5 md:w-6 h-5 md:h-6",
+                })}
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="md:group-hover:text-blue-400 line-clamp-2 font-semibold text-sm text-white md:text-base transition-colors">

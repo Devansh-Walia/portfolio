@@ -1,67 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  SiTypescript,
-  SiJavascript,
-  SiPython,
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiWebgl,
-  SiPixiv,
-  SiFramer,
-  SiRedux,
-  SiGit,
-  SiAmazon,
-  SiFirebase,
-  SiSupabase,
-} from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-
-const skillCategories = [
-  {
-    title: "Languages",
-    items: [
-      { name: "TypeScript", icon: SiTypescript, color: "text-blue-400" },
-      { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
-      { name: "Python", icon: SiPython, color: "text-blue-500" },
-    ],
-  },
-  {
-    title: "Frontend",
-    items: [
-      { name: "React.js", icon: SiReact, color: "text-cyan-400" },
-      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-300" },
-    ],
-  },
-  {
-    title: "UI/Graphics",
-    items: [
-      { name: "WebGL", icon: SiWebgl, color: "text-red-400" },
-      { name: "Pixi.js", icon: SiPixiv, color: "text-pink-400" },
-      { name: "Framer Motion", icon: SiFramer, color: "text-purple-400" },
-    ],
-  },
-  {
-    title: "State Management",
-    items: [
-      { name: "Redux", icon: SiRedux, color: "text-purple-500" },
-      { name: "React Query", icon: TbBrandReactNative, color: "text-red-400" },
-      { name: "Zustand", icon: SiReact, color: "text-blue-400" },
-    ],
-  },
-  {
-    title: "Tools",
-    items: [
-      { name: "Git", icon: SiGit, color: "text-orange-500" },
-      { name: "AWS", icon: SiAmazon, color: "text-yellow-500" },
-      { name: "Firebase", icon: SiFirebase, color: "text-yellow-400" },
-      { name: "Supabase", icon: SiSupabase, color: "text-emerald-500" },
-    ],
-  },
-];
+import { SKILL_CATEGORIES } from "@/utils/constants";
 
 export default function PremiumTools() {
   return (
@@ -91,7 +31,7 @@ export default function PremiumTools() {
       </motion.h2>
 
       <div className="space-y-4 md:space-y-6">
-        {skillCategories.map((category) => (
+        {SKILL_CATEGORIES.map((category) => (
           <motion.div
             key={category.title}
             className="space-y-4 md:space-y-6"
