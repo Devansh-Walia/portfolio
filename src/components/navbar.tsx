@@ -254,8 +254,6 @@ export default function Navbar() {
         return rect.top <= 100 && rect.bottom >= 100;
       });
 
-      console.log(currentSection);
-
       if (currentSection) {
         setActiveSection(currentSection.id);
       }

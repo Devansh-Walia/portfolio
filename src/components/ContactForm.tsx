@@ -39,7 +39,6 @@ export default function ContactForm() {
         await emailjs.init(publicKey);
 
         setIsInitialized(true);
-        console.log("EmailJS initialized successfully");
       } catch (error) {
         console.error("Failed to initialize EmailJS:", error);
       }
