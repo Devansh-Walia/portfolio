@@ -3,13 +3,6 @@
 import { motion } from "framer-motion";
 import { SKILL_CATEGORIES } from "@/utils/constants";
 
-// This comment ensures Tailwind includes these classes in the final CSS build
-// text-blue-400 text-blue-500 text-blue-600 text-yellow-400 text-yellow-500
-// text-cyan-300 text-cyan-400 text-cyan-500 text-white text-purple-500
-// text-red-400 text-red-500 text-pink-500 text-pink-600 text-orange-500
-// text-orange-600 text-green-500 text-emerald-500 text-gray-300 text-gray-400
-// text-black
-
 export default function PremiumTools() {
   return (
     <motion.div
