@@ -12,7 +12,7 @@ export const CONTACT_LINKS = {
 export const EXTERNAL_LINKS = {
   dashgen: "https://dashgen.in",
   calendraw: "https://calendar.devanshwalia.com/",
-  xg: "https://x.glue/is",
+  xg: "https://x.glue.is",
   glue: "https://glue.is",
   fifo: "https://fifo.im",
   gluelabs: "https://gluelabs.com",
@@ -172,19 +172,19 @@ export const VOLUNTEER_EXPERIENCES = [
     role: "Marketing Department Member",
     period: "2023 - Present",
     responsibilities: [
-      "Developed and executed marketing strategies to promote organization events and initiatives",
-      "Collaborated with team members to organize successful fundraising campaigns",
+      "Developed and executed marketing strategies to promote organization events and initiatives.",
+      "Collaborated with team members to organize successful fundraising campaigns.",
     ],
     logoSrc: "/images/organizations/koshish-family.png",
   },
   {
     organization: "Koshish Family",
-    role: "HOD Website Department",
+    role: "Website Department HOD",
     period: "2022 - Present",
     responsibilities: [
-      "Led the website development team, overseeing all aspects of the organization's online presence",
-      "Managed website content updates and ensured information accuracy across all pages",
-      "Trained team members on content management systems and web development best practices",
+      "Led the website development team, overseeing all aspects of the organization's online presence.",
+      "Managed website content updates and ensured information accuracy across all pages.",
+      "Trained team members on content management systems and web development best practices.",
     ],
     logoSrc: "/images/organizations/koshish-family.png",
   },
@@ -224,7 +224,7 @@ export const HOBBIES = [
     title: "LeetCode",
     icon: FaCode,
     description:
-      "Regularly solve coding problems to sharpen algorithmic thinking and problem-solving skills.",
+      "Try Solving coding problems from time to time to sharpen algorithmic thinking and problem-solving skills.",
     link: "https://leetcode.com/u/dunit99k/",
     gradient: "from-yellow-500/10 to-amber-500/10",
   },

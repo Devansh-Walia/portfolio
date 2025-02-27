@@ -167,7 +167,7 @@ export default function Home() {
                   <p className="text-zinc-400">
                     Based in India
                     <br />
-                    Available for remote work worldwide
+                    Available for remote work worldwide.
                   </p>
                 </div>
 
@@ -178,7 +178,7 @@ export default function Home() {
                   <p className="text-zinc-400">
                     Mon - Fri: 9:00 AM - 6:00 PM IST
                     <br />
-                    Flexible for different time zones
+                    Flexible for different time zones.
                   </p>
                 </div>
               </div>
