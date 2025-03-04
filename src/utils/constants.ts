@@ -78,7 +78,7 @@ export const PROJECTS = [
   {
     title: "Dashgen",
     role: "Software Development Engineer",
-    duration: "01/2023 - Present",
+    duration: "08/2024 - Present",
     description:
       "A platform for integrating AI models into chat functionalities. Developed with colleagues, now with 1000+ active users. Built full-stack chat thread and message editing using tree and LinkedList concepts.",
     technologies: [
@@ -100,7 +100,7 @@ export const PROJECTS = [
   {
     title: "XG",
     role: "Team Lead",
-    duration: "06/2022 - Present",
+    duration: "06/2023 - Present",
     description:
       "Created a powerful workflow automation tool similar to Zapier using queues and LinkedList techniques. Constructed backend for a CRM system and a mail editor.",
     technologies: [
@@ -119,7 +119,7 @@ export const PROJECTS = [
   {
     title: "Glue",
     role: "Software Development Engineer",
-    duration: "06/2022 - Present",
+    duration: "09/2024 - Present",
     description:
       "Built an app to create fan pages with AI-generated videos and rewards to engage customers, aiming to 3x organic traffic on the customer's profile.",
     technologies: [
@@ -136,7 +136,7 @@ export const PROJECTS = [
   {
     title: "Glue Labs Website",
     role: "Software Development Engineer",
-    duration: "06/2022 - Present",
+    duration: "09/2022 - 12/2022",
     description:
       "Created the Glue Labs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
     technologies: ["Astro", "Svelte", "TypeScript", "Tailwind CSS"],
@@ -146,7 +146,7 @@ export const PROJECTS = [
   {
     title: "Calendraw",
     role: "Solo Developer",
-    duration: "01/2023 - Present",
+    duration: "11/2024 - Present",
     description:
       "Engineered an online calendar tool featuring traditional writing and scribbling capabilities.",
     technologies: ["Svelte Kit", "TypeScript", "CSS"],
@@ -156,7 +156,7 @@ export const PROJECTS = [
   {
     title: "MyEduStation",
     role: "Software Development Engineer",
-    duration: "01/2023 - Present",
+    duration: "09/2023 - Present",
     description:
       "Delivered a full-stack educational platform offering resources for students, teachers, and parents, featuring articles, videos, and downloadable materials. Included 3+ interlinked services.",
     technologies: [
