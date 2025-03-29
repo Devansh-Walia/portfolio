@@ -100,7 +100,7 @@ export const PROJECTS = [
   {
     title: "XG",
     role: "Team Lead",
-    duration: "06/2023 - Present",
+    duration: "06/2023 - 03/2025",
     description:
       "Created a powerful workflow automation tool similar to Zapier using queues and LinkedList techniques. Constructed backend for a CRM system and a mail editor.",
     technologies: [
@@ -119,7 +119,7 @@ export const PROJECTS = [
   {
     title: "Glue",
     role: "Software Development Engineer",
-    duration: "09/2024 - Present",
+    duration: "09/2024 - 03/2025",
     description:
       "Built an app to create fan pages with AI-generated videos and rewards to engage customers, aiming to 3x organic traffic on the customer's profile.",
     technologies: [
@@ -156,7 +156,7 @@ export const PROJECTS = [
   {
     title: "MyEduStation",
     role: "Software Development Engineer",
-    duration: "09/2023 - Present",
+    duration: "09/2023 - 03/2025",
     description:
       "Delivered a full-stack educational platform offering resources for students, teachers, and parents, featuring articles, videos, and downloadable materials. Included 3+ interlinked services.",
     technologies: [
@@ -176,9 +176,20 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
+    company: "ThoughtWorks",
+    role: "UI Developer - Consultant",
+    period: "03/2025 - Present",
+    responsibilities: [
+      "Joined ThoughtWorks as a UI Developer - Consultant, working at the forefront of leveraging technology for meaningful change.",
+      "Collaborating with cross-functional teams to deliver cutting-edge projects and innovative solutions.",
+      "Applying expertise in modern frontend technologies to create impactful user experiences.",
+      "Contributing to ThoughtWorks' mission of pushing the boundaries of innovation in software development.",
+    ],
+  },
+  {
     company: "Glue Labs",
     role: "Software Developer",
-    period: "06/2022 - Present",
+    period: "06/2022 - 03/2025",
     responsibilities: [
       "Developed the workflow structure in XG using Linked List and Queues to automate marketing email campaigns. Implemented backend systems and integrated frontend APIs and UI.",
       "Designed a process to gather data from multiple sources, utilize AI for analysis, and feed results into React email templates for seamless communication.",
