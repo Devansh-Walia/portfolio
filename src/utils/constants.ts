@@ -1,7 +1,6 @@
-import { FiLayers, FiCode } from "react-icons/fi";
+import { FiLayers } from "react-icons/fi";
 import { FaChess, FaCode, FaChalkboardTeacher } from "react-icons/fa";
 import { GiCricketBat, GiBoxingGlove, GiKimono } from "react-icons/gi";
-import { MdOutlineChat } from "react-icons/md";
 import { HiAcademicCap } from "react-icons/hi";
 import {
   SiTypescript,
@@ -33,8 +32,10 @@ import {
   SiSvelte,
   SiCplusplus,
   SiFlask,
+  SiNginx,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
 
 export const CONTACT_LINKS = {
   twitter: "https://x.com/devansh_walia_",
@@ -45,27 +46,12 @@ export const CONTACT_LINKS = {
 export const EXTERNAL_LINKS = {
   dashgen: "https://dashgen.in",
   calendraw: "https://calendar.devanshwalia.com/",
-  xg: "https://x.glue.is",
-  glue: "https://glue.is",
   fifo: "https://fifo.im",
-  gluelabs: "https://gluelabs.com",
   mediumProfile: "https://medium.com/@devanshwalia9898",
   mediumRssUrl: "https://medium.com/feed/@devanshwalia9898",
 };
 
 export const FEATURED_PROJECTS = [
-  {
-    title: "XG PLATFORM",
-    description: "Workflow Automation System",
-    icon: FiCode,
-    isDark: true,
-  },
-  {
-    title: "GLUE",
-    description: "AI-Powered Fan Pages",
-    icon: MdOutlineChat,
-    isDark: true,
-  },
   {
     title: "DASHGEN",
     description: "AI Integration Platform",
@@ -113,7 +99,7 @@ export const PROJECTS = [
       "TypeScript",
       "Tailwind CSS",
     ],
-    url: EXTERNAL_LINKS.xg,
+    url: "#",
     gradient: "from-blue-500/10 to-purple-500/10",
   },
   {
@@ -130,18 +116,8 @@ export const PROJECTS = [
       "Tailwind CSS",
       "Redis",
     ],
-    url: EXTERNAL_LINKS.glue,
+    url: "#",
     gradient: "from-purple-500/10 to-pink-500/10",
-  },
-  {
-    title: "Glue Labs Website",
-    role: "Software Development Engineer",
-    duration: "09/2022 - 12/2022",
-    description:
-      "Created the Glue Labs website with Astro.js, integrating Svelte and TailwindCSS to achieve a 98% SEO score, improving search engine visibility.",
-    technologies: ["Astro", "Svelte", "TypeScript", "Tailwind CSS"],
-    url: EXTERNAL_LINKS.gluelabs,
-    gradient: "from-pink-500/10 to-orange-500/10",
   },
   {
     title: "Calendraw",
@@ -180,10 +156,12 @@ export const EXPERIENCES = [
     role: "UI Developer - Consultant",
     period: "03/2025 - Present",
     responsibilities: [
-      "Joined ThoughtWorks as a UI Developer - Consultant, working at the forefront of leveraging technology for meaningful change.",
-      "Collaborating with cross-functional teams to deliver cutting-edge projects and innovative solutions.",
-      "Applying expertise in modern frontend technologies to create impactful user experiences.",
-      "Contributing to ThoughtWorks' mission of pushing the boundaries of innovation in software development.",
+      "Helped the QA team debug and fix automation issues, including accessibility attributes for date inputs and resolving XML build output problems for input elements.",
+      "Built and maintained the Android build pipeline. Worked with JSON Schema — implemented switch keyword support, debugged default population issues, and helped teammates with complex schema debugging across product onboarding.",
+      "Picked up Java and debugged auth issues in the quote service during a rewrite. Contributed to the quote service rewrite with aggregation fixes for better performance.",
+      "Learned Nginx and implemented Nginx-based routing in an Expo app's web build. Built a cache module in commons with master data caching using bloom filters.",
+      "Onboarded new team members into the project, helped organize iteration planning meetings, and worked with leads on team structure and work distribution.",
+      "Collaborated on proposal service implementation using workflows. Taught teammates debugging techniques with source maps and browser debugger tools, advocating for debugger usage over console logs.",
     ],
   },
   {
@@ -249,9 +227,9 @@ export const PREMIUM_TOOLS = [
 ];
 
 export const STATS = [
-  { number: "~3", text: "YEARS OF EXPERIENCE" },
-  { number: "+18", text: "PROJECTS COMPLETED" },
-  { number: "+28", text: "WORKED LIBRARIES" },
+  { number: "~4", text: "YEARS OF EXPERIENCE" },
+  { number: "+22", text: "PROJECTS COMPLETED" },
+  { number: "+35", text: "WORKED LIBRARIES" },
 ];
 
 export const VOLUNTEER_EXPERIENCES = [
@@ -326,6 +304,7 @@ export const SKILL_CATEGORIES = [
       { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
       { name: "C++", icon: SiCplusplus, color: "text-blue-600" },
       { name: "Python", icon: SiPython, color: "text-blue-500" },
+      { name: "Java", icon: FaJava, color: "text-red-500" },
     ],
   },
   {
@@ -378,6 +357,7 @@ export const SKILL_CATEGORIES = [
       { name: "Firebase", icon: SiFirebase, color: "text-yellow-400" },
       { name: "Supabase", icon: SiSupabase, color: "text-emerald-500" },
       { name: "Git", icon: SiGit, color: "text-orange-500" },
+      { name: "Nginx", icon: SiNginx, color: "text-green-500" },
     ],
   },
 ];

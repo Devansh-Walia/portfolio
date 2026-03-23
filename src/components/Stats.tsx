@@ -96,9 +96,17 @@ const Stats = () => {
           <motion.h2 className="font-bold text-5xl md:text-9xl leading-tight">
             SOFTWARE <span className="text-gray-600">ENGINEER</span>
           </motion.h2>
+          <motion.p
+            className="mt-2 md:mt-3 text-sm md:text-lg tracking-widest text-gray-500 uppercase"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            Full-Stack & AI
+          </motion.p>
           <motion.h4 className="mt-6 md:mt-10 max-w-3xl text-gray-300 text-lg md:text-2xl">
-            Passionate about creating intuitive and engaging user experiences.
-            Specialize in transforming ideas into beautifully crafted products.
+            Building thoughtful software at the intersection of design and
+            engineering. From full-stack systems to AI-powered products.
           </motion.h4>
         </motion.div>
       </motion.div>

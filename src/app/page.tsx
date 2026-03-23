@@ -50,7 +50,7 @@ export default function Home() {
           <main className="flex-1 space-y-8">
             <section aria-label="Statistics" className="hidden">
               <span itemProp="jobTitle">Software Engineer</span>
-              <span itemProp="worksFor">Glue Labs</span>
+              <span itemProp="worksFor">ThoughtWorks</span>
               <meta itemProp="email" content="devansh.walia.06@gmail.com" />
             </section>
 

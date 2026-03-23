@@ -141,24 +141,28 @@ const RecentProjects = () => {
                     </div>
                   </div>
                 </div>
-                <motion.a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="md:flex hidden hover:bg-white/5 p-2 rounded-full text-gray-400 hover:text-white transition-colors shrink-0"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <FiExternalLink className="w-5 md:w-6 h-5 md:h-6" />
-                </motion.a>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex md:hidden p-2 rounded-full text-gray-400 shrink-0"
-                >
-                  <FiExternalLink className="w-5 h-5" />
-                </a>
+                {project.url !== "#" && (
+                  <motion.a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="md:flex hidden hover:bg-white/5 p-2 rounded-full text-gray-400 hover:text-white transition-colors shrink-0"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <FiExternalLink className="w-5 md:w-6 h-5 md:h-6" />
+                  </motion.a>
+                )}
+                {project.url !== "#" && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex md:hidden p-2 rounded-full text-gray-400 shrink-0"
+                  >
+                    <FiExternalLink className="w-5 h-5" />
+                  </a>
+                )}
               </div>
 
               <p className="text-gray-300 text-sm md:text-base leading-relaxed">

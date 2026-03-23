@@ -68,7 +68,7 @@ export default function RootLayout({
               jobTitle: "Software Engineer",
               worksFor: {
                 "@type": "Organization",
-                name: "Glue Labs",
+                name: "ThoughtWorks",
               },
               description:
                 "Software engineer specializing in building exceptional digital experiences.",

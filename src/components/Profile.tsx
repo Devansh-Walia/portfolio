@@ -114,7 +114,8 @@ function MobileProfile() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            A software engineer developing seamless user experiences
+            A software engineer crafting seamless digital experiences with modern
+            web and AI technologies
           </motion.h4>
         </motion.div>
 
@@ -241,8 +242,8 @@ export default function Profile() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              A software engineer developing seamless user experiences with
-              modern web technologies.
+              A software engineer crafting seamless digital experiences with
+              modern web and AI technologies.
             </motion.p>
           </motion.div>
 

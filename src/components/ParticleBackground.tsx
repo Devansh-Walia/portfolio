@@ -18,7 +18,7 @@ const ParticleBackground = () => {
   >([]);
   const [isMobile, setIsMobile] = useState(false);
 
-  const colors = ["#60A5FA", "#818CF8", "#A78BFA", "#F472B6"];
+  const colors = ["#60A5FA", "#818CF8", "#A78BFA", "#F472B6", "#2DD4BF"];
 
   useEffect(() => {
     // Check if device is mobile
