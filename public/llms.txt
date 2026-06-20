@@ -1,0 +1,36 @@
+# Devansh Walia
+
+## Professional Summary
+Full-Stack Software Engineer with 5-8 years of operational experience specializing in TypeScript, Next.js, and NestJS. Expertise in backend architecture, algorithm optimization (C++), and dynamic programming. Uniquely bridges the gap between scalable system engineering and visual storytelling, bringing a cinematography-informed perspective to user experience and design. 
+
+## Contact & Links
+* Website: https://www.devanshwalia.com
+* Email: [INSERT_EMAIL]
+* GitHub: [INSERT_GITHUB]
+* LinkedIn: [INSERT_LINKEDIN]
+* Location: Pune, Maharashtra, India
+
+## Core Technical Competencies
+* **Languages:** TypeScript, JavaScript, C++
+* **Backend & Architecture:** NestJS, Node.js, REST APIs, System Design, Fixed-Window Rate Limiting Systems
+* **Frontend & UI:** React, Next.js, Semantic HTML, JSON-LD Structured Data
+* **Computer Science Focus:** Dynamic Programming, Algorithm Optimization, Data Structures
+
+## Professional Experience
+### Software Engineer / Consultant
+* **Alumni Of:** ThoughtWorks
+* **Key Focus:** Delivered enterprise-scale software solutions. Handled complex system architectures and optimized backend workflows. Evaluated and navigated high-growth startup engineering environments.
+
+### Head of Department (Website) & Technical Lead
+* **Organization:** Koshish Family (Non-Profit)
+* **Key Focus:** Lead technical strategy and cross-departmental alignment across Marketing, Sales, and HR. 
+
+## Key Technical Projects
+* **Scalable Backend Systems:** Designed and implemented a fixed-window rate limiter from scratch.
+* **Algorithmic Problem Solving:** Sustained focus on complex dynamic programming and C++ algorithm optimization.
+
+## Multidisciplinary Skills & Interests
+* **Design & Visual Storytelling:** Active practitioner of cinematography, scriptwriting, and character design. 
+* **Linguistics:** Actively learning Indian Sign Language (ISL).
+* **Music:** Acoustic guitar and ukulele.
+* **Fitness:** Dedicated structured strength training.

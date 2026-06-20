@@ -47,7 +47,7 @@ export default function Home() {
             <Profile />
           </aside>
 
-          <main className="flex-1 space-y-8">
+          <div className="flex-1 space-y-8">
             <section aria-label="Statistics" className="hidden">
               <span itemProp="jobTitle">Software Engineer</span>
               <span itemProp="worksFor">ThoughtWorks</span>
@@ -218,7 +218,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-          </main>
+          </div>
         </div>
 
         <footer className="mt-16 mb-20 md:mb-0 text-center text-gray-500">

@@ -26,11 +26,12 @@ const Experience = () => {
   };
 
   return (
-    <motion.div
+    <motion.section
       className="relative space-y-6 md:space-y-8 px-4 md:px-0 pt-16 md:pt-24"
       variants={containerVariants}
       initial="initial"
       animate="animate"
+      aria-labelledby="experience-heading"
     >
       <motion.div variants={titleVariants}>
         <div className="flex items-center gap-2 md:gap-3 mb-2">
@@ -39,7 +40,10 @@ const Experience = () => {
             Career Journey
           </h3>
         </div>
-        <motion.h2 className="font-bold text-4xl md:text-[90px] leading-none">
+        <motion.h2
+          id="experience-heading"
+          className="font-bold text-4xl md:text-[90px] leading-none"
+        >
           <span className="text-white">WORK</span>{" "}
           <span className="text-gray-600">EXPERIENCE</span>
         </motion.h2>
@@ -62,7 +66,7 @@ const Experience = () => {
           <ExperienceCard key={experience.period} {...experience} />
         ))}
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 };
 

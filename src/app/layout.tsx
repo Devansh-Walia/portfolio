@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import Navbar from "@components/navbar";
 import { metadata } from "./metadata";
 import { Analytics } from "@vercel/analytics/react";
-import { CONTACT_LINKS } from "@/utils/constants";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,31 +56,26 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Devansh Walia",
-              url: CONTACT_LINKS.me,
-              image: "/images/profile.jpeg",
-              sameAs: [
-                CONTACT_LINKS.github,
-                CONTACT_LINKS.linkedin,
-                CONTACT_LINKS.twitter,
-              ],
-              jobTitle: "Software Engineer",
-              worksFor: {
-                "@type": "Organization",
-                name: "ThoughtWorks",
+              "name": "Devansh Walia",
+              "jobTitle": "Full-Stack Software Engineer",
+              "url": "https://www.devanshwalia.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "India"
               },
-              description:
-                "Software engineer specializing in building exceptional digital experiences.",
-              knowsAbout: [
-                "Web Development",
-                "React",
-                "Next.js",
+              "alumniOf": {
+                "@type": "Organization",
+                "name": "ThoughtWorks"
+              },
+              "knowsAbout": [
                 "TypeScript",
-                "WebGL",
-                "Svelte",
+                "Next.js",
                 "NestJS",
-                "SQL",
-                "PostgreSQL",
+                "C++",
+                "Dynamic Programming",
+                "System Architecture"
               ],
             }),
           }}

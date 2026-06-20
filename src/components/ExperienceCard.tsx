@@ -26,8 +26,19 @@ const ExperienceCard = ({
     return { start, end, isPresent };
   };
 
+  const toDateTime = (value: string) => {
+    if (value.toLowerCase() === "present") {
+      return undefined;
+    }
+
+    const [month, year] = value.split("/");
+    return `${year}-${month.padStart(2, "0")}`;
+  };
+
+  const { start, end, isPresent } = formatPeriod(period);
+
   return (
-    <motion.div
+    <motion.article
       className="relative flex flex-col gap-4 md:gap-6 border-white/10 md:hover:border-white/20 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm p-5 md:p-8 border rounded-3xl transition-all overflow-hidden group hover:md:scale-105"
       variants={{
         initial: { opacity: 0, y: 20 },
@@ -52,17 +63,18 @@ const ExperienceCard = ({
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center gap-2 text-gray-500">
             <FiCalendar className="w-4 h-4" />
-            <p className="text-base md:text-lg">{formatPeriod(period).start}</p>
+            <time dateTime={toDateTime(start)} className="text-base md:text-lg">
+              {start}
+            </time>
           </div>
           <div className="flex items-center gap-2 text-gray-500">
             <FiClock className="w-4 h-4" />
-            <p
-              className={`text-base md:text-lg ${
-                formatPeriod(period).isPresent ? "text-green-400" : ""
-              }`}
+            <time
+              dateTime={toDateTime(end)}
+              className={`text-base md:text-lg ${isPresent ? "text-green-400" : ""}`}
             >
-              {formatPeriod(period).end}
-            </p>
+              {end}
+            </time>
           </div>
         </div>
       </div>
@@ -83,7 +95,7 @@ const ExperienceCard = ({
           </motion.li>
         ))}
       </ul>
-    </motion.div>
+    </motion.article>
   );
 };
 

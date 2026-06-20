@@ -61,12 +61,13 @@ const shimmerEffect = {
 
 function MobileProfile() {
   return (
-    <motion.div
+    <motion.section
       id="profile"
       className="flex flex-col md:hidden px-4 w-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      aria-labelledby="mobile-profile-heading"
     >
       <div className="border-2 border-gray-800 mx-auto py-10 rounded-3xl w-full max-w-[280px]">
         {/* Profile Image */}
@@ -103,6 +104,7 @@ function MobileProfile() {
           animate="animate"
         >
           <motion.h1
+            id="mobile-profile-heading"
             className="font-bold text-3xl text-white"
             whileHover={{ scale: 1.05 }}
           >
@@ -161,12 +163,12 @@ function MobileProfile() {
           ))}
         </motion.div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 
 export default function Profile() {
-  const profileRef = useRef<HTMLDivElement>(null);
+  const profileRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -184,12 +186,13 @@ export default function Profile() {
   return (
     <>
       <MobileProfile />
-      <motion.div
+      <motion.article
         ref={profileRef}
         className="md:block top-32 fixed hidden bg-gradient-to-br from-gray-900 to-black rounded-3xl w-[400px] h-[680px] overflow-hidden"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
+        aria-labelledby="profile-heading"
       >
         <motion.div
           className="absolute inset-0"
@@ -230,6 +233,7 @@ export default function Profile() {
 
           <motion.div className="space-y-5 mt-10 text-center">
             <motion.h1
+              id="profile-heading"
               className="font-bold text-4xl text-white"
               whileHover={{ scale: 1.05 }}
             >
@@ -277,7 +281,7 @@ export default function Profile() {
             ))}
           </div>
         </div>
-      </motion.div>
+      </motion.article>
     </>
   );
 }

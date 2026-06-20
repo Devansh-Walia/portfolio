@@ -16,7 +16,7 @@ const ProjectCard = ({
   gradient,
 }: ProjectCardProps) => {
   return (
-    <motion.div
+    <motion.article
       className="relative flex items-center gap-8 border-white/5 bg-black/20 backdrop-blur-sm p-6 border rounded-3xl cursor-pointer overflow-hidden group"
       variants={{
         initial: { opacity: 0, y: 20 },
@@ -55,7 +55,7 @@ const ProjectCard = ({
       >
         <FiArrowRight size={24} className="text-white" />
       </motion.div>
-    </motion.div>
+    </motion.article>
   );
 };
 

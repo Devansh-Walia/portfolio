@@ -39,6 +39,15 @@ const RecentProjects = () => {
     return { start, end, isPresent };
   };
 
+  const toDateTime = (value: string) => {
+    if (value.toLowerCase() === "present") {
+      return undefined;
+    }
+
+    const [month, year] = value.split("/");
+    return `${year}-${month.padStart(2, "0")}`;
+  };
+
   const containerVariants: Variants = {
     initial: {},
     animate: {
@@ -73,11 +82,12 @@ const RecentProjects = () => {
   };
 
   return (
-    <motion.div
+    <motion.section
       className="space-y-8 md:space-y-16 px-4 md:px-0 pt-16 md:pt-32"
       variants={containerVariants}
       initial="initial"
       animate="animate"
+      aria-labelledby="projects-heading"
     >
       <motion.div variants={titleVariants}>
         <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
@@ -86,7 +96,10 @@ const RecentProjects = () => {
             Featured Work
           </h3>
         </div>
-        <motion.h2 className="font-bold text-5xl md:text-[120px] leading-none">
+        <motion.h2
+          id="projects-heading"
+          className="font-bold text-5xl md:text-[120px] leading-none"
+        >
           <span className="text-white">RECENT</span>{" "}
           <span className="text-gray-600">PROJECTS</span>
         </motion.h2>
@@ -105,8 +118,11 @@ const RecentProjects = () => {
           },
         }}
       >
-        {PROJECTS.map((project) => (
-          <motion.div
+        {PROJECTS.map((project) => {
+          const { start, end, isPresent } = formatDuration(project.duration);
+
+          return (
+          <motion.article
             key={project.title}
             className={`p-5 md:p-8 rounded-3xl bg-gradient-to-br ${project.gradient} backdrop-blur-3xl border border-white/10 md:hover:border-white/20 transition-all group relative overflow-hidden md:[&:hover]:scale-105`}
             variants={cardVariants}
@@ -125,19 +141,16 @@ const RecentProjects = () => {
                   <div className="flex flex-wrap items-center gap-4 mt-2">
                     <div className="flex items-center gap-2 text-gray-500 text-sm md:text-base">
                       <FiCalendar className="w-4 h-4 shrink-0" />
-                      <p>{formatDuration(project.duration).start}</p>
+                      <time dateTime={toDateTime(start)}>{start}</time>
                     </div>
                     <div className="flex items-center gap-2 text-gray-500 text-sm md:text-base">
                       <FiClock className="w-4 h-4 shrink-0" />
-                      <p
-                        className={
-                          formatDuration(project.duration).isPresent
-                            ? "text-green-400"
-                            : ""
-                        }
+                      <time
+                        dateTime={toDateTime(end)}
+                        className={isPresent ? "text-green-400" : ""}
                       >
-                        {formatDuration(project.duration).end}
-                      </p>
+                        {end}
+                      </time>
                     </div>
                   </div>
                 </div>
@@ -181,10 +194,11 @@ const RecentProjects = () => {
                 ))}
               </div>
             </div>
-          </motion.div>
-        ))}
+          </motion.article>
+          );
+        })}
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 };
 
